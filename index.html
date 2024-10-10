@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Art Gallery</title> 
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PaintX</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to My Art Gallery</h2>
+        <p>Discover my collection of art pieces.</p>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="artwork" onclick="openLightbox(); showImage('img1');"> 
+            <img src="C:\Users\jagan\Pictures\landscape.jpg" alt="Art 1">
+            <p>Landscape (Oil painting)</p>
+        </div>
+        <div class="artwork" onclick="openLightbox(); showImage('img2');">
+             <img src="C:\Users\jagan\Pictures\1234.jpg" alt="Art 2">
+             <p>Incident (Water colour)</p>
+        </div>
+        <!-- Add more artworks here -->
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Jagannath K.M . This is my journey as an artist...</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </form>
+    <div class="social-links">
+        <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+    </div>
+</section>
+    
+    <footer>
+        <p>&copy; 2024 PaintX. All rights reserved.</p>
+    </footer>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+</body>
+</html>
